@@ -19,10 +19,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       - name: Install Dependencies
-       uses: borales/actions-yarn@v2.3.0
-       with:
+        uses: borales/actions-yarn@v2.3.0
+        with:
          cmd: install
       - name: Generate Coverage Report
-       uses: borales/actions-yarn@v2.3.0
-       with:
+        uses: borales/actions-yarn@v2.3.0
+        with:
          cmd: test
